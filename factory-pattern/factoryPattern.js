@@ -13,7 +13,7 @@ class Tester {
 }
 
 class EmployeeFactory {
-    // can call whit out making instance.
+    // can call whitout making instance.
     static create(type,name) {
         if(type === 'Developer') return new Developer(type,name);
         if(type === 'Tester') return new Tester(type,name);
@@ -30,3 +30,11 @@ let Persons = [
 for (const Person of Persons) {
     console.log(Person.type , Person.name);
 }
+
+/* Output
+Developer Mohammad
+Tester Reza
+Developer Zahra
+Developer Ali
+Tester Roya
+*/
